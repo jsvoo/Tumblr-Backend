@@ -6,6 +6,9 @@ const mongoose = require("mongoose")
 const api_route = require("./routes/api_route")
 const cors = require('cors')
 
+const port = process.env.PORT || 4000
+
+
 app.use(cors({origin:"*"}))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
