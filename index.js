@@ -16,10 +16,17 @@ app.use(bodyParser.json())
 
 app.use("/", api_route)
 
-mongoose.connect("mongodb://localhost/Tumblr_db", { useNewUrlParser: true, useUnifiedTopology: true }, 
-err => { 
+// mongoose.connect("mongodb://localhost/Tumblr_db", { useNewUrlParser: true, useUnifiedTopology: true }, 
+// err => { 
+//     if (err) throw err 
+//     console.log("Database connected")
+// }) 
+
+
+mongoose.connect("mongodb+srv://onojavoo:voo247@tumblr-db.fhyq2pm.mongodb.net/tumblr-blog?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, 
+err => {  
     if (err) throw err 
-    console.log("Database connected")
+    console.log("Cloud Database connected")
 })
 
 mongoose.Promise=global.Promise
