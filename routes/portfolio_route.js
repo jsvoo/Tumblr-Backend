@@ -18,6 +18,7 @@ router.post("/contact", (req, res)=>{
         to: "onoja.jsdev@gmail.com",
         subject: req.body.subject, 
         html: `<p><b>Sender:</b> ${req.body.name}</p>
+                <p><b>email:</b> ${req.body.email}</p>
                  <b>Message:</b> <p> ${req.body.message}</p>`,
     };
 
@@ -27,7 +28,7 @@ router.post("/contact", (req, res)=>{
             res.send(false)
         } else {
             console.log('Email sent: ' + info.response);
-            res.send(true)
+            res.send({success:true, message:req.body})
         }
     });
  
