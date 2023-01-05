@@ -25,13 +25,13 @@ app.use("/portfolio", portfolio_route)
 // }) 
 
 
-// mongoose.connect("mongodb+srv://onojavoo:voo247@tumblr-db.fhyq2pm.mongodb.net/tumblr-blog?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, 
-// err => {  
-//     if (err) throw err 
-//     console.log("Cloud Database connected")
-// })
+mongoose.connect("mongodb+srv://onojavoo:voo247@tumblr-db.fhyq2pm.mongodb.net/tumblr-blog?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, 
+err => {  
+    if (err) throw err 
+    console.log("Cloud Database connected")
+})
 
-// mongoose.Promise=global.Promise
+mongoose.Promise=global.Promise
 
 app.listen(4000, ()=>{
     console.log("Running on http://localhost:4000")
