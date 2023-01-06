@@ -28,7 +28,7 @@ router.post("/contact", (req, res)=>{
             res.send(false)
         } else {
             console.log('Email sent: ' + info.response);
-            res.send(`Thank you for reaching out. I'd be in touch with you via ${req.body.email} shortly`)
+            res.send("success")
         }
     });
  
