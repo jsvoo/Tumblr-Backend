@@ -24,4 +24,4 @@ GET REQUESTS
         *All comments = url/comments
         *All likes = url/likes
 
-NOTE: Routes for POST, PUT, DELETE and some GET Requests routes are withheld for security reasons.
+NOTE: Routes for POST, PUT, DELETE and some GET Requests are withheld for security reasons.
