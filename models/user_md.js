@@ -43,6 +43,11 @@ const userSchema = new schema({
         type: String,
         required: [true, "field is required"],
         ref:"roles"
+    },
+
+    adminId:{
+        type:String,
+        required:[true, "Admin Id is required"]
     }
 
 

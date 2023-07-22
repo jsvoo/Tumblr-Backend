@@ -41,6 +41,11 @@ const postSchema = new schema({
         required:[true, msg],
         min:0,
         default:0
+    },
+
+    adminId:{
+        type:String,
+        required:[true, msg]
     }
   
 })
